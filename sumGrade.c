@@ -2,19 +2,17 @@
 
 int main()
 {
-	int grade1 = 0;
-	int grade2 = 0;
+	float grade1 = 0;
+	float grade2 = 0;
 
 	printf("Please, enter the value of first grade: ");
-	scanf("%i");
+	scanf("%f", &grade1);
 
-	printf("Please, enter the value of second grade: ", grade2);
-	scanf("%i", grade2);
+	printf("Please, enter the value of second grade: ");
+	scanf("%f", &grade2);
 
-	int cumulativeGrade(int grade1, int grade2)
-	{
-		int result = grade1 + grade2;
+	float result = 0;
+	result = (grade1 + grade2) / 2;
 
-		return result;
-	};
+	printf("The result of the sum of the grades is: %f", result);
 };
