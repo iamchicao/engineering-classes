@@ -2,11 +2,6 @@
 
 int main()
 {
-  // Identificação do vendedor
-  // Código da peça
-  // Preço unitário da peça
-  // Quantidade vendida
-
   char id[30];
   int code_piece;
   float price_piece;
@@ -22,7 +17,7 @@ int main()
   scanf("%f", &price_piece);
 
   printf("What is the quantity of the piece? ");
-  scanf("%f", &quantity_sold);  
+  scanf("%f", &quantity_sold);
 
   float totalValue = quantity_sold * price_piece;
   totalValue *= 0.05;
