@@ -20,7 +20,7 @@ int main()
   scanf("%f", &fourthNumber);
 
   float firstOperation = firstNumber + secondNumber;
-  printf("The result of the sum of the numbers is: %f", firstOperation);
+  printf("The result of the sum of the numbers is: %.2f", firstOperation);
   printf("\n");
 
   float secondOperation = firstNumber + thirdNumber;
