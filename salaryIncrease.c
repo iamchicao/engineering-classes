@@ -18,6 +18,10 @@ int main()
     salary_increase_percentage = 0.15;
   };
 
+  /* Operator ternary
+  salary <= 1500 ? salary_increase_percentage = 0.35 : salary_increase_percentage = 0.15;
+   */
+
   salary_increase = salary * salary_increase_percentage;
   salary = salary + salary_increase;
 

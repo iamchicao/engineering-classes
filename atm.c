@@ -16,7 +16,42 @@ int main()
     return 1;
   }
 
-  if (withdrawal % 5 == 1 || withdrawal == 3)
+  if (withdrawal == 1 || 3)
+  {
+    printf("Invalid amount, please try again");
+    printf("\n");
+    printf("Enter the value greater than 1 or 3 reals");
+
+    return 1;
+  }
+
+  /* Switch Case
+    switch (withdrawal)
+    {
+    case 0:
+      printf("Invalid amount, please try again");
+      printf("\n");
+      printf("Enter the value greater than 0 reals");
+      break;
+
+    case 1:
+      printf("Invalid amount, please try again");
+      printf("\n");
+      printf("Enter the value greater than 1 reals");
+      break;
+
+    case 3:
+      printf("Invalid amount, please try again");
+      printf("\n");
+      printf("Enter the value greater than 3 reals");
+      break;
+
+    default:
+      break;
+    }
+    */
+
+  if (withdrawal % 5 == 1 || withdrawal % 5 == 3)
   {
     withdrawal = withdrawal - 4;
     reals2 = 2;
@@ -40,7 +75,7 @@ int main()
   reals5 = withdrawal / 5;
   withdrawal = withdrawal % 5;
 
-  reals2 = reals2 + 2;
+  reals2 = (withdrawal / 2) + reals2;
 
   printf("banknotes of R$200,00 = %d\n", reals200);
   printf("banknotes of R$100,00 = %d\n", reals100);
