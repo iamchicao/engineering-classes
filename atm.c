@@ -7,17 +7,18 @@ int main()
   scanf("%i", &withdrawal);
   int reals200, reals100, reals50, reals20, reals10, reals5, reals2 = 0;
 
-  if (withdrawal >= 0)
+  if (withdrawal <= 0)
   {
     printf("Invalid amount, please try again");
     printf("\n");
     printf("Enter the value greater than 0 reals");
+
+    return 1;
   }
 
   if (withdrawal % 5 == 1 || withdrawal == 3)
-    ;
   {
-    withdrawal -= 4;
+    withdrawal = withdrawal - 4;
     reals2 = 2;
   }
 
