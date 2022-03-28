@@ -2,24 +2,22 @@
 
 int main()
 {
-  int withdrawal = 0;
+  int withdrawal = 0, reals200, reals100, reals50, reals20, reals10, reals5, reals2 = 0;
+
   printf("Enter your withdrawal amount: ");
   scanf("%i", &withdrawal);
-  int reals200, reals100, reals50, reals20, reals10, reals5, reals2 = 0;
 
   if (withdrawal <= 0)
   {
-    printf("Invalid amount, please try again");
-    printf("\n");
+    printf("Invalid amount, please try again.\n");
     printf("Enter the value greater than 0 reals");
 
     return 1;
   }
 
-  if (withdrawal == 1 || 3)
+  if ((withdrawal == 1 || withdrawal == 3))
   {
-    printf("Invalid amount, please try again");
-    printf("\n");
+    printf("Invalid amount, please try again.\n");
     printf("Enter the value greater than 1 or 3 reals");
 
     return 1;

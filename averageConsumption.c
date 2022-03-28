@@ -2,7 +2,7 @@
 
 int main()
 {
-  float timeSpending, averageSpeed;
+  float timeSpending, averageSpeed, distance, consumption;
 
   printf("Enter time spent on the trip in hours? ");
   scanf("%f", &timeSpending);
@@ -10,8 +10,8 @@ int main()
   printf("Tell us the speed in km/h? ");
   scanf("%f", &averageSpeed);
 
-  float distance = timeSpending * averageSpeed;
-  float consumption = distance / 12;
+  distance = timeSpending * averageSpeed;
+  consumption = distance / 12;
   timeSpending = distance / averageSpeed;
   averageSpeed = distance / timeSpending;
 
