@@ -2,10 +2,7 @@
 
 int main()
 {
-	int score1;
-	int score2;
-	int score3;
-	int result;
+	int score1, score2, score3, result;
 
 	printf("Enter the first score: ");
 	scanf("%i", &score1);
