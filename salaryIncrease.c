@@ -9,18 +9,7 @@ int main()
   scanf("%f", &salary);
 
   // Data processing to calculate the increase
-  if (salary <= 1500)
-  {
-    salary_increase_percentage = 0.35;
-  }
-  else
-  {
-    salary_increase_percentage = 0.15;
-  };
-
-  /* Operator ternary
-  salary <= 1500 ? salary_increase_percentage = 0.35 : salary_increase_percentage = 0.15;
-   */
+  salary_increase_percentage = ((salary <= 1500) ? 0.35 : 0.15);
 
   salary_increase = salary * salary_increase_percentage;
   salary = salary + salary_increase;

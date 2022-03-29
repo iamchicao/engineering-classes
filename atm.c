@@ -7,47 +7,30 @@ int main()
   printf("Enter your withdrawal amount: ");
   scanf("%i", &withdrawal);
 
-  if (withdrawal <= 0)
+  switch (withdrawal)
   {
-    printf("Invalid amount, please try again.\n");
+  case 0:
+    printf("Invalid amount, please try again");
+    printf("\n");
     printf("Enter the value greater than 0 reals");
+    return 1;
+
+  case 1:
+    printf("Invalid amount, please try again");
+    printf("\n");
+    printf("Enter the value greater than 1 reals");
 
     return 1;
-  }
 
-  if ((withdrawal == 1 || withdrawal == 3))
-  {
-    printf("Invalid amount, please try again.\n");
-    printf("Enter the value greater than 1 or 3 reals");
-
+  case 3:
+    printf("Invalid amount, please try again");
+    printf("\n");
+    printf("Enter the value greater than 3 reals");
     return 1;
+
+  default:
+    break;
   }
-
-  /* Switch Case
-    switch (withdrawal)
-    {
-    case 0:
-      printf("Invalid amount, please try again");
-      printf("\n");
-      printf("Enter the value greater than 0 reals");
-      break;
-
-    case 1:
-      printf("Invalid amount, please try again");
-      printf("\n");
-      printf("Enter the value greater than 1 reals");
-      break;
-
-    case 3:
-      printf("Invalid amount, please try again");
-      printf("\n");
-      printf("Enter the value greater than 3 reals");
-      break;
-
-    default:
-      break;
-    }
-    */
 
   if (withdrawal % 5 == 1 || withdrawal % 5 == 3)
   {
