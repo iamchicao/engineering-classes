@@ -2,10 +2,7 @@
 
 int main()
 {
-  float firstNumber = 0;
-  float secondNumber = 0;
-  float thirdNumber = 0;
-  float fourthNumber = 0;
+  float firstNumber = 0, secondNumber = 0, thirdNumber = 0, fourthNumber = 0;
 
   float firstOperation, secondOperation, thirdOperation, fourthOperation, fifthOperation, sixthOperation, seventhOperation, eighthOperation, ninthOperation, tenthOperation, eleventhOperation, twelfthOperation;
 

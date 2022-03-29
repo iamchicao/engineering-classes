@@ -3,10 +3,7 @@
 void main()
 {
 	// Start variables with initial state
-	char first_name[30];
-	char last_name[30];
-	char country[30];
-	char favorite_team[30];
+	char first_name[30], last_name[30], country[30], favorite_team[30];
 	int age;
 
 	// printf - print on the screen
