@@ -10,20 +10,20 @@ int main()
 {
   int a, b;
 
-  printf("Type the value of a: ");
+  printf("Type the value of A: ");
   scanf("%d", &a);
 
-  printf("Type the value of b: ");
+  printf("Type the value of B: ");
   scanf("%d", &b);
 
   if (a == b)
-    printf("The value of a is equal to the value of b");
+    printf("The value of A is equal to the value of B");
   else if (a != b)
-    printf("The value of a is different from the value of b");
+    printf("The value of A is different from the value of B");
   else if (a > b)
-    printf("The value of a is greater than the value of b");
+    printf("The value of A is greater than the value of B");
   else
-    printf("The value of a is less than the value of b");
+    printf("The value of A is less than the value of B");
 
   if ((a % 2 == 0) && (b % 2 == 0))
     printf("\nBoth values are even");
@@ -31,7 +31,12 @@ int main()
     printf("\nBoth values are odd");
 
   if (a % 2 == 0)
-    printf("\nThe value of a is even");
+    printf("\nThe value of A is even");
   else
-    printf("\nThe value of a is odd");
+    printf("\nThe value of A is odd");
+
+  if (b % 2 == 0)
+    printf("\nThe value of B is even");
+  else
+    printf("\nThe value of B is odd");
 }
