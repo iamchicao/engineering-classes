@@ -1,11 +1,5 @@
 #include <stdio.h>
 
-// a == b, a!=b, a>b, a<b
-// se a par/impar
-// se b par/impar
-// se ambos par
-// se ambos impar
-
 int main()
 {
   int a, b;
