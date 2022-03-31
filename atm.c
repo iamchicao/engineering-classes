@@ -38,33 +38,46 @@ int main()
     reals2 = 2;
   }
 
-  reals200 = withdrawal / 200;
-  withdrawal = withdrawal % 200;
+  if (reals200 = withdrawal / 200)
+  {
+    withdrawal = withdrawal % 200;
+    printf("banknotes of R$200,00 = %d\n", reals200);
+  };
 
-  reals100 = withdrawal / 100;
-  withdrawal = withdrawal % 100;
+  if (reals100 = withdrawal / 100)
+  {
+    withdrawal = withdrawal % 100;
+    printf("banknotes of R$100,00 = %d\n", reals100);
+  };
 
-  reals50 = withdrawal / 50;
-  withdrawal = withdrawal % 50;
+  if (reals50 = withdrawal / 50)
+  {
+    withdrawal = withdrawal % 50;
+    printf("banknotes of R$50,00 = %d\n", reals100);
+  };
 
-  reals20 = withdrawal / 20;
-  withdrawal = withdrawal % 20;
+  if (reals20 = withdrawal / 20)
+  {
+    withdrawal = withdrawal % 20;
+    printf("banknotes of R$20,00 = %d\n", reals20);
+  };
 
-  reals10 = withdrawal / 10;
-  withdrawal = withdrawal % 10;
+  if (reals10 = withdrawal / 10)
+  {
+    withdrawal = withdrawal % 10;
+    printf("banknotes of R$10,00 = %d\n", reals10);
+  };
 
-  reals5 = withdrawal / 5;
-  withdrawal = withdrawal % 5;
+  if (reals5 = withdrawal / 5)
+  {
+    withdrawal = withdrawal % 5;
+    printf("banknotes of R$5,00 = %d\n", reals5);
+  };
 
-  reals2 = (withdrawal / 2) + reals2;
-
-  printf("banknotes of R$200,00 = %d\n", reals200);
-  printf("banknotes of R$100,00 = %d\n", reals100);
-  printf("banknotes of R$50,00 = %d\n", reals50);
-  printf("banknotes of R$20,00 = %d\n", reals20);
-  printf("banknotes of R$10,00 = %d\n", reals10);
-  printf("banknotes of R$5,00 = %d\n", reals5);
-  printf("banknotes of R$2,00 = %d\n", reals2);
+  if ((reals2 = (withdrawal / 2) + reals2))
+  {
+    printf("banknotes of R$2,00 = %d\n", reals2);
+  };
 
   return 0;
 }
