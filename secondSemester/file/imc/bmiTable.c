@@ -21,13 +21,13 @@ int main()
   FILE *file;
   char name[100];
   float weight, height, imc;
-  file = fopen("bmi_table.csv", "r");
+  file = fopen("bmi_table.csv", "r");  // Open the file for reading
   if (file == NULL)
   {
     printf("Error opening file");
     return 1;
   }
-  while (fscanf(file, "%[^,],%f,%f ", name, &weight, &height) != EOF)
+  while (fscanf(file, "%[^,],%f,%f ", name, &weight, &height) != EOF)  //%[^,] means that it will read until it finds a comma
   {
     imc = weight / (height * height);
     printf("%s: %.2f \n", name, imc);
