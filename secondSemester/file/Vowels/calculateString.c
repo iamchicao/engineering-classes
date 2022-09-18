@@ -3,8 +3,6 @@ Write a program that reads the vowels.txt file, validates only lowercase or uppe
 and perform the vowel frequency calculation and the percentage of vowels in the file.
 */
 
-
-
 #include <stdio.h>
 int main()
 {
