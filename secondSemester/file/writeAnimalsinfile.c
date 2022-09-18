@@ -10,7 +10,7 @@ int main(int argc, char *argv[])
     {
       printf("\nWrite the name of an animal: ");
       fgets(name, 50, stdin); // Reads a maximum of 50 letters
-      fprintf(fp, "Animal %d: %s\n", i + 1, name);
+      fprintf(fp, "Animal %d: %s", i + 1, name);
     }
     // Final for
     fclose(fp);
